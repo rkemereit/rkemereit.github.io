@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+    <!--
+    Richard Kemereit
+    Web 190
+    01/29/26
+    -->
+<title>My First HTML5 Web Page</title>
+<meta charset="utf-8">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #wrapper {
+        width: 80%;
+        margin-left:  auto;
+        margin-right: auto;
+        border: 1px solid black;
+    }
+    header{
+        text-align: left;
+    }
+    h1{
+        font-size: 36px;
+    }
+    nav{
+        border: thin solid black;
+        display: flex;
+        background-color: #333;
+
+    }
+    nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+    nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .side {
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+    }
+    .main {
+       flex: 70%;
+       background-color: white;
+       padding: 20px;
+    }
+    #main {
+        border: thin solid black;
+    }
+    #address {
+        border: thin solid black;
+        padding: 7px;
+    }
+    footer {
+        text-align: center;
+        border: thin solid black;
+    }
+
+    @media screen and (max-width: 700px) {
+        .row {
+            flex-direction: column;
+        }
+        #wrapper {
+            width: 100%;
+        }
+        nav{
+            flex-direction: column;
+        }
+    }
+        
+</style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Basic HTML / CSS layout</h1>
+    </header>
+    <nav>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>      
+        <a href="#">4</a>
+        <a href="#">5</a>
+
+    </nav>
+    <div class="row">
+        <div class="side">
+            <h2>
+                Important stuff about me
+            </h2>
+            <p>
+                This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.
+            </p>
+        </div>
+        <div class="main">
+            <h2>
+                Important stuff below
+            </h2>
+            <p>
+                This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.
+            </p>
+            <p>
+                This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.
+            </p>
+            <p>
+                This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.
+            </p>
+            <p>
+                This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.
+            </p>
+            <div id="address">
+                Richard Kemereit<br>
+                1234 Street Name<br>
+                City, ST 12345<br>
+                (123) 456-7890<br>
+                <a href=""></a>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p class="fnav">
+            <a href="">Nav 1</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="">Nav 2</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="">Nav 3</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="">Nav 4</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="">Nav 5</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        </p>
+
+        <p>Copyright &copy; 2026 Richard Kemereit</p>
+    </footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
