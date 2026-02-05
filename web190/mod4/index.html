@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+    <!--
+    Richard Kemereit
+    Web 190
+    02/03/26
+    -->
+<title>My First HTML5 Web Page</title>
+<meta charset="utf-8">
+<style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        border: thin solid black;
+    }
+    header {
+        background: deepskyblue;
+        color: white;
+        padding: 20px;
+    }
+    main {
+        padding: 20px;
+        border-top: thin solid black;
+        border-bottom: thin solid black;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: cyan;
+        }
+    .flex-container > div {
+        background-color: #f1f1f1;
+        width: 250px;
+        margin: 10px;
+        text-align: center;
+        line-height: 25px;
+        font-size: 1.1em;
+    }
+    .flex-container > div > img {
+        width: 100%;
+        height: auto;
+    }
+    footer {
+       background: deepskyblue;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 1.1em;
+    }
+
+    @media (max-width: 700px) {
+        #wrapper {
+            width: 100%;
+        }
+        .flex-container > div {
+            width:  auto;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>
+            Web 190 - Spring 2026: Mod 4
+        </h1>
+    </header>
+    <main>
+        <h2>The justify-content Property</h2>
+        <p>The "justify-content: space-around;" declaration displays the flex with space before, between, and after yhe lines.</p>
+    </main>
+    <div class="flex-container">
+        <div><img src="IMG_0456.jpg" alt="" >The Lake Express at the dock in Milwaukee</div>
+        <div><img src="IMG_0457.jpg" alt="" >Top Deck of Lake Express</div>
+        <div><img src="IMG_0458.jpg" alt="" >Leaving Milwaukee</div>
+        <div><img src="IMG_0460.jpg" alt="" >Wake</div>
+        <div><img src="IMG_0470.jpg" alt="" >The Beach at Goderich, Ontario, Canada </div>
+        <div><img src="IMG_0477.jpg" alt="" >The Harbor at Tobermory, Ontario, Canada</div>
+        <div><img src="IMG_0478.jpg" alt="" >Boat Dock, Tobermory</div>
+        <div><img src="IMG_0482.jpg" alt="" >Monarch Butterfly</div>
+        <div><img src="IMG_0484.jpg" alt="" >The Chi-Cheemaun approaching the dock in Tobermory</div>
+    </div>
+    <footer>
+        <p>Copyright &copy;, 2026. </p>
+    </footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
