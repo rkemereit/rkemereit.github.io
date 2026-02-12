@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+    <!--
+    Richard Kemereit
+    Web 190
+    02/11/26
+    Mod 5 part 2
+    -->
+<title>Mod 5 part 2</title>
+<meta charset="utf-8">
+<style>
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content:center;
+        grid-gap: 10px;
+        padding: 10px;
+        background-color: cadetblue;
+    }
+
+    .grid-container1 > div {
+        background-color: beige;
+        text-align: center;
+        font-size: 30px;
+    }
+     .grid-container2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-content:space-between;
+        grid-gap: 10px;
+        padding: 10px;
+        background-color: rgb(211, 90, 101);
+        height: 200px;
+    }
+     .grid-container2 > div {
+        background-color: rgb(108, 95, 168);
+        text-align: center;
+        font-size: 30px;
+     }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Mod 5 part 2</h1>
+    </header>
+    <div>
+        <h2>Grid 1: justify-content: center</h2>
+    </div>
+<div class = "grid-container1">
+    <div class="top1">1</div>
+    <div class="top2">2</div>
+    <div class="top3">3</div>
+    <div class="top4">4</div>
+    <div class="top5">5</div>
+    <div class="top6">6</div>
+</div> <!-- end of grid container1-->
+<div>
+    <p>Justify content center moves the 6 div boxes in the gris to the center of the grid container.</p>
+</div>
+<br>
+<div>
+    <h2>Grid 2: align-content: space-between</h2>
+</div>
+<div class = "grid-container2">
+
+    <div class="bottom1">1</div>
+    <div class="bottom2">2</div>
+    <div class="bottom3">3</div>
+    <div class="bottom4">4</div>
+    <div class="bottom5">5</div>
+    <div class="bottom6">6</div>
+</div> <!-- end of grid container1-->
+<div>
+    <p>Align content: space between makes it so the space in the biddle of the grid container remains empty.
+        This pushes the six divs to bothe the top and the bottom of the grid container.</p>
+</div>
+</body>
+</html>
