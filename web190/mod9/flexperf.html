@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Richard Kemereit
+        WEB 190
+        Mod 9-2
+        03/13/26
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample assignment webpage demonstrating HTML structure, flexbox layout, and responsive design.">
+    <title>Responsive Layout Assignment</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            width: 82%;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+            border: 2px solid #ccc;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .left {
+            flex: 5;
+            border: thin dashed #ccc;
+        }
+        .left img {
+            width: 70%;
+            height: auto;
+            float: right;
+            margin-left: 15px;
+        }
+        .right {
+            flex: 3;
+            border: thin solid #ccc;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 525px) {
+            .wrapper {
+                width: 100%;
+                padding: 10px;
+            }
+            nav, main {
+                flex-direction: column;
+            }
+            nav a {
+                font-size: 1.1rem;
+            }
+            header h1 {
+                font-size: 1.4rem;
+            }
+            .left, .right {
+                width: 100%;
+            }
+            .left img {
+                width: 80%;
+                float: none;
+                display: block;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Responsive layout assignment</h1>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+        <main>
+            <section class="left">
+                <img src="trampoline.jpg" alt="Trampoline image">
+                <h2>Left Area</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatem quam quidem aspernatur sequi dolore nulla magnam culpa natus laboriosam sapiente, 
+                    hic exercitationem cupiditate suscipit libero nam maxime necessitatibus obcaecati nisi earum voluptatum. 
+                    Quaerat pariatur sed earum obcaecati quis. Repudiandae, quisquam!
+                </p>
+            </section>
+            <aside class="right">
+                <h2>Right Area</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Accusamus mollitia cum delectus vel iusto maiores neque deleniti doloremque voluptate aut ea deserunt quaerat at sapiente 
+                    modi quae, accusantium consequuntur? Atque rerum obcaecati voluptatum exercitationem earum vel molestiae dolorum? Architecto, quam?
+                </p>
+            </aside>
+        </main>
+        <footer>
+            <p>&copy; 2026 Richard Kemereit. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
