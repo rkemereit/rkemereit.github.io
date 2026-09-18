@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+</head>
+<body>
+<h2> Welcome to the Miles to Kilometer Converter!</h2>
+<p>Below, please enter the desired miles you would like to convert</p>
+<input type="text" id = "mile">
+   <button onclick="convert()">Submit</button>
+   <p id="kilo"></p>
+   <script>
+    function convert() {
+    let mile = Number(document.getElementById("mile").value)
+    let k = 0;
+    k = mile * 1.609344;
+    document.getElementById("kilo").innerHTML = 
+    mile + " is " + k + " Kilometers";
+
+    }
+   </script>
+</body>
+</html>
