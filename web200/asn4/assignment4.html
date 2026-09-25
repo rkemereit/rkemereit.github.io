@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+</head>
+<body>
+<h2>Addtion is so Fun!</h2>
+<p>Pick a number then hit submit</p>
+<input type="text" id = "add">
+   <button onclick="addition()">Submit</button>
+   <p id="sum"></p>
+
+   <h2>Multplication is so Fun!</h2>
+<p>Pick a number then hit submit</p>
+<input type="text" id = "multiply">
+   <button onclick="multiply()">Submit</button>
+   <p id="product"></p>
+
+   <h2>Subtraction is so Fun!</h2>
+<p>Pick a number then hit submit</p>
+<input type="text" id = "subtract">
+   <button onclick="subtract()">Submit</button>
+   <p id="difference"></p>
+   <script>
+    var addNumbers = [];
+    var multiplyNumbers = [];
+    var subtractNumbers = [];
+    function addition() {
+    let add = Number(document.getElementById("add").value)
+    addNumbers.push(add)
+    let total = 0
+    for (let num of addNumbers){
+        total += num;
+    }
+    document.getElementById("sum").innerHTML = "The total so far is: " + total;
+}
+
+    function multiply() {
+    let multiply = Number(document.getElementById("multiply").value)
+    multiplyNumbers.push(multiply)
+    let total = 1
+    for (let num of multiplyNumbers){
+        total *= num;
+    }
+    document.getElementById("product").innerHTML = "The total so far is: " + total;
+}
+
+    function subtract() {
+    let subtract = Number(document.getElementById("subtract").value)
+    subtractNumbers.push(subtract)
+    let total = 0
+    for (let num of subtractNumbers){
+        total -= num;
+    }
+    document.getElementById("difference").innerHTML = "The total so far is: " + total;
+    }
+   </script>
+   
+</body>
+</html>
