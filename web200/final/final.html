@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Crust</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Pizza</a></li>
+            <li><a href="#">Sides</a></li>
+            <li><a href="#">Drinks</a></li>
+            <li><a href="#">Desserts</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Pizza</h2>
+        <h3>Build your Perfect Pizza!</h3>
+    </header>
+
+    <main>
+        <form id="orderForm">
+            <section class="radioOption">
+                <h3>Choose a size</h3>
+                <label class="choice">
+                    <input type="radio" name="size" value="Small">
+                    Small ($10.00 - $0.75 per topping)
+                </label><br>
+                <label class="choice">
+                    <input type="radio" name="size" value="Medium">
+                    Medium ($13.00 - $1.15 per topping)
+                </label><br>
+                <label class="choice">
+                    <input type="radio" name="size" value="Large">
+                    Large ($16.00 - $1.50 per topping)
+                </label>
+            </section>
+
+            <section class="radioOption">
+                <h3>Pick a Crust</h3>
+                <label class="choice">
+                    <input type="radio" name="crust" value="Thin Crust">
+                    Thin Crust
+                </label><br>
+                <label class="choice">
+                    <input type="radio" name="crust" value="Stuffed">
+                    Stuffed
+                </label><br>
+                <label class="choice">
+                    <input type="radio" name="crust" value="New York Style">
+                    New York Style
+                </label>
+            </section>
+
+            <section class="checkboxOption">
+                <h3>Choose your toppings <span id="toppingRate"></span></h3>
+                <label class="choice">
+                    <input type="checkbox" name="toppings" value="Pepperoni">
+                    Pepperoni
+                </label><br>
+                <label class="choice">
+                    <input type="checkbox" name="toppings" value="Sausage">
+                    Sausage
+                </label><br>
+                <label class="choice">
+                    <input type="checkbox" name="toppings" value="Onion">
+                    Onion
+                </label><br>
+                <label class="choice">
+                    <input type="checkbox" name="toppings" value="Jalapeno">
+                    Jalapeno
+                </label><br>
+                <label class="choice">
+                    <input type="checkbox" name="toppings" value="Mushroom">
+                    Mushroom
+                </label><br>
+                <label class="choice">
+                    <input type="checkbox" name="toppings" value="Chicken">
+                    Chicken
+                </label>
+            </section>
+
+            <button type="button" id="addPizzaBtn" class="btnSecondary">Add another Pizza</button>
+
+            <aside id="orderDetails">
+                <h3>Order Details</h3>
+                <p>Pizzas: <span id="pizzaCount">0</span></p>
+                <ul id="orderItems">
+                    <li class="emptyOrder">No Items on your Order</li>
+                </ul>
+                <div class="grandTotal">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <p id="statusMsg"></p>
+            </aside>
+
+            <section class="contact-section">
+                <h3>Contact Information</h3>
+                <div class="field">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div class="field">
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </section>
+
+            <button type="submit" class="btnPrimary">Checkout</button>
+        </form>
+    </main>
+
+    <script src="final.js"></script>
+</body>
+</html>
