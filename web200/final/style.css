@@ -1,0 +1,134 @@
+body {
+  background: black;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  padding-bottom: 40px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li a {
+  display: block;
+  padding: 12px 15px;
+  margin: 5px;
+  color: goldenrod;
+  text-decoration: none;
+  border: 2px solid goldenrod;
+  border-radius: 25%;
+}
+
+nav li a:hover {
+  color: white;
+  border-color: white;
+}
+
+header h2,
+header h3 {
+  text-align: center;
+  margin: 8px 0;
+}
+
+main {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.radioOption,
+.checkboxOption,
+.contact-section {
+  margin-bottom: 22px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid white;
+}
+
+.choice {
+  cursor: pointer;
+}
+
+.choice input {
+  accent-color: goldenrod;
+  margin-right: 6px;
+}
+
+.field {
+  margin-bottom: 12px;
+}
+
+.field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-top: 4px;
+  background: #1a1a1a;
+  color: white;
+  border: 1px solid goldenrod;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: white;
+}
+
+button {
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnSecondary {
+  background: white;
+  color: black;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.btnPrimary {
+  background: red;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.btnPrimary:hover {
+  background: darkred;
+}
+
+#orderDetails {
+  border: 1px solid goldenrod;
+  border-radius: 6px;
+  padding: 14px;
+  margin-bottom: 22px;
+}
+
+#orderItems {
+  list-style: none;
+  padding: 0;
+}
+
+#orderItems li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #333;
+}
+
+.grandTotal {
+  display: flex;
+  justify-content: space-between;
+  color: goldenrod;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+#statusMsg {
+  margin-top: 10px;
+}
